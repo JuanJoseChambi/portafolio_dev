@@ -1,61 +1,17 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+	image: string;
 }
 
-const { href, title, body } = Astro.props;
+const { image } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #23262d;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 7px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
-		color: white;
-		background-color: #23262d;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
-	}
-</style>
+<div class="max-w-[1100px] mx-auto flex justify-between items-start bg-redd-500">
+	<picture class="w-[430px] h-[250px] flex justify-start items-start overflow-hidden rounded-md">
+		<img src={image as string} alt="">
+	</picture>
+	<section class="w-2/3 pl-4 flex flex-col justify-start items-start bg-blued-500">
+		<h2 class="pb-2 font-semibold text-3xl text-neutral-800">VERSA - Tienda de ropa Vintage </h2>
+		<p class="text-sm font-medium text-neutral-700">Versa es un sitio web e-commerce especializada en moda, diseñada para  ofrecer una experiencia de compra en línea intuitiva y atractiva. Este proyecto combina diseño moderno, funcionalidad robusta y una experiencia</p>
+	</section>
+</div>

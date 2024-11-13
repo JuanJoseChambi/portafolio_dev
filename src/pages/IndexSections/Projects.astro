@@ -1,18 +1,14 @@
 ---
 import versa from "../../../public/Projects/VersaShop.png"
-
+import Card from "../../components/Card.astro"
+import TitleSection from "../../components/TitleSection.astro"
 
 ---
-<main class="w-full h-screen bg-redd-500">
-    <h3 class="text-4xl px-16 pt-[50px] font-semibold text-neutral-800">PROYECTOS</h3>
-    <div class="max-w-[1100px] mx-auto my-5 flex justify-between items-start bg-redd-500">
-        <picture class="w-[430px] h-[250px] flex justify-start items-start overflow-hidden rounded-md">
-            <img src={versa.src as string} alt="">
-        </picture>
-        <section class="w-2/3 pl-4 flex flex-col justify-start items-start bg-blued-500">
-            <h2 class="pb-2 font-semibold text-3xl text-neutral-800">VERSA - Tienda de ropa Vintage </h2>
-            <p class="text-sm font-medium text-neutral-700">Versa es un sitio web e-commerce especializada en moda, diseñada para  ofrecer una experiencia de compra en línea intuitiva y atractiva. Este proyecto combina diseño moderno, funcionalidad robusta y una experiencia</p>
-        </section>
-    </div>
+<main class="area bg-redd-500">
+    <TitleSection title="PROYECTOS"/>
+    <section class="py-10 flex justify-center items-center flex-col gap-y-10 bg-blued-500">
+        <Card image={versa.src}/>
+        <Card image={versa.src}/>
+    </section>
 
 </main>

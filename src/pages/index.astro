@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import Header from "./IndexSections/Header.astro"
 import Nav from '../components/Nav.astro';
 import Projects from './IndexSections/Projects.astro';
+import Skills from './IndexSections/Skills.astro';
 // import Card from '../components/Card.astro';
 
 const persoal_info = await getCollection("personal_info");
@@ -15,6 +16,7 @@ const persoal_info = await getCollection("personal_info");
 	<Nav/>
 	<Header/>
 	<Projects/>
+	<Skills/>
 	
 </Layout>
 
