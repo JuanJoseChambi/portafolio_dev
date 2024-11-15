@@ -1,6 +1,6 @@
 
 const svgmodules : Record<string, { default: string }> = import.meta.glob("./*.svg",{ eager: true });
-console.log(svgmodules);
+// console.log(svgmodules);
 
 export const svgs = Object.entries(svgmodules).map(([path, module]: [string ,{default: string}]) => ({
     path:`Skills/${path.split("/")[1]}`,

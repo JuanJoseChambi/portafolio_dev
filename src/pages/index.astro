@@ -5,6 +5,7 @@ import Header from "./IndexSections/Header.astro"
 import Nav from '../components/Nav.astro';
 import Projects from './IndexSections/Projects.astro';
 import Skills from './IndexSections/Skills.astro';
+import AboutMe from './IndexSections/AboutMe.astro';
 // import Card from '../components/Card.astro';
 
 const persoal_info = await getCollection("personal_info");
@@ -13,10 +14,12 @@ const persoal_info = await getCollection("personal_info");
 ---
 
 <Layout title="Juan Jose">
+	
 	<Nav/>
 	<Header/>
 	<Projects/>
 	<Skills/>
+	<AboutMe/>
 	
 </Layout>
 
