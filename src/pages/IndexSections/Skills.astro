@@ -15,8 +15,9 @@ const habilities = ["Autodidacta", "Curiosidad", "Adaptabilidad", "Aprendizaje A
         <div class="w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
             <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">TECNICAS</h3>
             {svgs.map((svg) => (
-                <picture class="flex justify-center items-center cursor-pointer p-3 rounded-full bg-whited">
-                    <img class="drop-shadow-[5px_5px_3px_#5d5d5d] hover:-translate-y-5 transition-transform duration-500 text-[#5d5d5d] min-w-[27px] max-w-[27px] min-h-[27px] max-h-[27px]" src={svg.path} alt={svg.name} />
+                <picture class="relative flex flex-col justify-center items-center cursor-pointer p-3 rounded-full hover:-translate-y-5 transition-transform duration-500">
+                    <p class="text-xs text-neutral-700 font-semibold absolute top-0 -translate-y-2">{(svg.name).toUpperCase()}</p>
+                    <img class="drop-shadow-[5px_5px_3px_#5d5d5d] text-[#5d5d5d] min-w-[27px] max-w-[27px] min-h-[27px] max-h-[27px]" src={svg.path} alt={svg.name} />
                 </picture>
             ))}
         </div>
