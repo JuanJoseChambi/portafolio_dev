@@ -1,23 +1,32 @@
 ---
 
 import TitleSection from "../../components/TitleSection.astro";
-const svgmodules : Record<string, { default: string }> = import.meta.glob("../../../public/Skills/*.svg",{ eager: true });
+import { svgs } from "../../../public/Skills/Skills.ts";
+// console.log(svgs);
 
-const svgs = Object.entries(svgmodules).map(([path, module]: [string, {default: string}]) => ({
-    path:path.replace('/public', ''),
-    content: module.default
-}));
+const habilities = ["Autodidacta", "Curiosidad", "Adaptabilidad", "Aprendizaje Agil", "Trabajo en Equipo", "Resiliencia"]
 
 ---
 
-<section class="area h-screen">
+<section class="area">
     <TitleSection title="HABILIDADES" />
-    <section class="bg-redd-500">
+    <section class="my-10 flex justify-center items-start bg-redd-500">
 
-        <div class="flex justify-center items-center gap-5">
+        <div class="w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
+            <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">TECNICAS</h3>
             {svgs.map((svg) => (
-                <img class="w-[50px] h-[50px]" src={svg.path} alt="" />
+                <picture class="flex justify-center items-center cursor-pointer p-3 rounded-full bg-whited">
+                    <img class="drop-shadow-[5px_5px_3px_#5d5d5d] hover:-translate-y-5 transition-transform duration-500 text-[#5d5d5d] min-w-[27px] max-w-[27px] min-h-[27px] max-h-[27px]" src={svg.path} alt={svg.name} />
+                </picture>
             ))}
+        </div>
+        <div class="w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
+            <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">BLANDAS</h3>
+            <div class="flex flex-wrap justify-center items-center">
+                {habilities.map(text => (
+                    <p class="w-1/2 font-simibold tracking-wider text-center py-5 bg-blued-500"><b class="text-primary">{text[0]}</b>{text.slice(1)}</p>
+                ))}
+            </div>
         </div>
 
     </section>

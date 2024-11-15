@@ -5,7 +5,11 @@ export default {
 		extend: {
 			colors: {
 				gray_light: '#5A5A5A',
+				primary:"#724ab9"
 			},
+			textColor:{
+				primary:"#724ab9"
+			}
 		},
 	},
 	plugins: [],
