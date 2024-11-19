@@ -6,6 +6,9 @@ import Nav from '../components/Nav.astro';
 import Projects from './IndexSections/Projects.astro';
 import Skills from './IndexSections/Skills.astro';
 import AboutMe from './IndexSections/AboutMe.astro';
+import Services from './IndexSections/Services.astro';
+import ContactMe from './IndexSections/ContactMe.astro';
+import Footer from './IndexSections/Footer.astro';
 // import Card from '../components/Card.astro';
 
 const persoal_info = await getCollection("personal_info");
@@ -20,6 +23,8 @@ const persoal_info = await getCollection("personal_info");
 	<Projects/>
 	<Skills/>
 	<AboutMe/>
-	
+	<Services/>
+	<ContactMe/>	
+	<Footer/>
 </Layout>
 

@@ -7,3 +7,6 @@ export const svgs = Object.entries(svgmodules).map(([path, module]: [string ,{de
     name: path.split("/")[1].split(".")[0],
     content: module.default
 }));
+
+console.log(svgs);
+

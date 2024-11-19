@@ -1,17 +1,25 @@
 ---
 // import TitleSection from "../../components/TitleSection.astro";
 import profile_dev from "../../../public/Header/ProfileDev.png"
+import TimeLine from "../../components/TimeLine.astro"
 
 ---
 
-<section class="py-10 flex justify-center items-center gap-5 bg-redd-500">
-    <picture class="w-[400px] h-[400px] bg-redd-500 rounded-full">
-        <img src={profile_dev.src} alt="" class="">
+<section class="py-10 flex justify-center items-start gap-10 bg-redd-500">
+    <picture class="w-[400px] h-[400px] bg-redd-500 rounded-full bg-neutral-300">
+    <!-- <picture class="w-[400px] h-[400px] bg-redd-500 rounded-full shadow-md shadow-black bg-neutral-300"> -->
+        <img src={profile_dev.src} alt="" class="rounded-full drop-shadow-[10px_10px_7px_#5d5d5d]">
     </picture>
-    <section class="w-[550px] flex flex-col justify-start items-start gap-3">
+    <section class="w-[550px] py-5 flex flex-col justify-start items-start gap-3 bg-blued-500">
         <h2 class="font-semibold text-neutral-700 text-4xl">SOBRE MI</h2>
-        <p class="text-sm font-medium">Soy Juan José, desarrollador Fullstack Jr. Inicialmente interesado en ciberseguridad y videojuegos en 2022, me adentré en el desarrollo web. Comenzando de una manera Autodidacta y graduado de bootcamps como SoyHenry, donde he fortalecido habilidades tecnicas como blandas.</p>
-        <p class="text-sm font-medium">Mi enfoque se basa en la práctica constante y la adquisición continua de habilidades para ofrecer soluciones innovadoras. Con experiencia en frontend, backend y bases de datos, domino tecnologías clave como React, Express y PostgreSQL/MongoDB.</p>
+        <p class="text-sm font-medium text-neutral-600">Soy Juan José, desarrollador Fullstack Jr. Inicialmente interesado en ciberseguridad y videojuegos en 2022, me adentré en el desarrollo web. Comenzando de una manera Autodidacta y graduado de bootcamps como SoyHenry, donde he fortalecido habilidades tecnicas como blandas.</p>
+        <p class="text-sm font-medium text-neutral-600">Mi enfoque se basa en la práctica constante y la adquisición continua de habilidades para ofrecer soluciones innovadoras. Con experiencia en frontend, backend y bases de datos, domino del stack PERN/MERN con tecnologías clave como React, Express y PostgreSQL/MongoDB.</p>
     </section>
 
+</section>
+<section class="max-w-[1150px] w-[90%] mx-auto min-h-[200px] pt-20 flex justify-start items-start bg-redd-500">
+    <TimeLine textSize="" title="Secundaria" year="2018 - 2022" text="Bachiller en Ciencias Sociales y Humanidades - EEM N°4 Homero Manzi"/>
+    <TimeLine textSize="" title="SoyHenry" year="08 May - 25 Ago - 2023" text="Bootcamp intensivo de 800+ horas en tecnologías Fullstack y habilidades blandas."/>
+    <TimeLine textSize="" title="Autodidacta" year="24 Sep / 2022 - Actualidad" text="Autodidacta en desarrollo full-stack, explorando tecnologías y mejores estándares."/>
+    <TimeLine textSize="" title="Ing. Informatico" year="24 Sep / 2022 - Actualidad" text="Estudiante de Ingeniería en Informática, Universidad de Buenos Aires (UBA)."/>
 </section>
