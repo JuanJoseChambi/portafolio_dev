@@ -1,9 +1,26 @@
 ---
-import TitleSection from "../../components/TitleSection.astro";
+// import TitleSection from "../../components/TitleSection.astro";
+import github from "../../../public/ImageContact/ProfileGithub.jpg"
+import linkedin from "../../../public/ImageContact/Linkedin.jpg"
 
 ---
 
-<section class="max-w-[1150px] mx-auto flex flex-col justify-start items-start gap-3 py-10 bg-redd-500 ">
+<section class="max-w-[1150px] mx-auto flex flex-col justify-start items-start gap-3 pb-10 pt-5 bg-redd-500 ">
     <h2 class="text-start text-4xl font-semibold tracking-widest bg-redd-500 text-neutral-800">CONTACTAME</h2>
-    <p class="w-[60%] text-sm text-start">Si estás en la búsqueda de un colaborador motivado y comprometido para futuros proyectos, estoy disponible para ser parte de tu equipo. Estoy abierto a explorar oportunidades de colaboración. Si consideras que puedo aportar valor a tu equipo, no dudes en ponerte en contacto. Hasta pronto.</p>
-</section>
+    <div class="bg-redd-500 flex justify-center items-center">
+        <p class="w-1/2 text-sm text-start text-neutral-800">Si estás en la búsqueda de un colaborador motivado y comprometido para futuros proyectos, estoy disponible para ser parte de tu equipo. Estoy abierto a explorar oportunidades de colaboración. Si consideras que puedo aportar valor a tu equipo, no dudes en ponerte en contacto. Hasta pronto.</p>
+        <section class="w-1/2 flex flex-col justify-center items-center gap-y-3 bg-greend-500 ">
+            <div class="w-[425px] flex justify-center items-center border border-neutral-400 bg-[#0D1117]">
+                <picture class="w-[70px] h-[85px] flex justify-center items-center bg-redd-500">
+                    <img src={github.src} alt="" class="w-[35px] h-[35px] rounded-full mb-5">
+                </picture>
+                <ul class="w-full h-full flex flex-col justify-center items-start gap-y-1">
+                    <li class="text-xs text-white font-light flex justify-start items-center gap-2"><h2>JoseChambi</h2><p class="text-[10px] text-neutral-400">JuanJoseChambi</p></li>
+                    <li class="text-[8px] text-neutral-400 font-light">Fullstack JR Developer / Desarrollador | Javascript | Typescript | React | Vite | Redux | Sass | Tailwind | Style Module | Node | Express | PostgreSQL | MongoDB</li>
+                    <li class="text-[8px] text-neutral-400"><i class="bx bx-map mr-1 text-[12px]"/>Buenos Aires, Argentina</li>
+                </ul>
+            </div>
+            <div class="w-[425px] flex justify-center items-center py-5 border border-neutral-400 bg-blued-500">Linkedin</div>
+        </section>
+    </div>
+</section> 

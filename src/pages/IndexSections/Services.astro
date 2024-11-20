@@ -1,13 +1,15 @@
 ---
+import CardServices from "../../components/CardServices.astro";
+
 ---
 
-<section class="max-w-[1150px] w-[90%] py-5 mx-auto flex flex-col justify-center items-center gap-5 bg-redd-500">
-    <div class="w-full pt-5 flex justify-evenly bg-greend-500 items-center gap-5">
-        <section class="w-[575px] cursor-pointer flex justify-center items-center py-14 font-semibold text-xl text-neutral-500 hover:text-neutral-800 transition-colors duration-700 bg-white shadow-md shadow-neutral-500">FRONTEND</section>
-        <section class="w-[575px] cursor-pointer flex justify-center items-center py-14 font-semibold text-xl text-neutral-500 hover:text-neutral-800 transition-colors duration-700 bg-white shadow-md shadow-neutral-500">BACKEND</section>
+<section class="max-w-[1150px] w-[90%] py-10 mx-auto flex flex-col justify-center items-center bg-redd-500">
+    <div class="w-full py-5 flex justify-around items-center bg-greend-500">
+        <CardServices title="FRONTEND" icon="bx bx-credit-card-front"/>
+        <CardServices title="BACKEND" icon="bx bx-server"/>
+        <CardServices title="DISEÑO" icon="bx bx-palette"/>
+        <CardServices title="RE-DISEÑO" icon="bx bxs-color"/>
     </div>
-    <div class="w-full pb-5 flex justify-evenly bg-greend-500 items-center gap-5">
-        <section class="w-[575px] cursor-pointer flex justify-center items-center py-14 font-semibold text-xl text-neutral-500 hover:text-neutral-800 transition-colors duration-700 bg-white shadow-md shadow-neutral-500">DISEÑO</section>
-        <section class="w-[575px] cursor-pointer flex justify-center items-center py-14 font-semibold text-xl text-neutral-500 hover:text-neutral-800 transition-colors duration-700 bg-white shadow-md shadow-neutral-500">RE-DISEÑO</section>
-    </div>
+    <!-- <div class="w-full pb-5 flex justify-evenly bg-greend-500 items-center gap-5"> -->
+    <!-- </div> -->
 </section>
