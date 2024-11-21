@@ -8,5 +8,4 @@ export const svgs = Object.entries(svgmodules).map(([path, module]: [string ,{de
     content: module.default
 }));
 
-console.log(svgs);
 
