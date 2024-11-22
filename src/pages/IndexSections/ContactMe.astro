@@ -1,17 +1,17 @@
 ---
-// import TitleSection from "../../components/TitleSection.astro";
 import github from "../../../public/ImageContact/ProfileGithub.jpg"
 import linkedin from "../../../public/ImageContact/Linkedin.jpg"
+// import imagotipo from "../../../public/Logo/Imagotipo2.png"
 
 ---
 
 <section class="max-w-[1150px] mx-auto flex flex-col justify-start items-start gap-3 pb-10 pt-5 bg-redd-500 ">
     <h2 class="text-start text-4xl font-semibold tracking-widest bg-redd-500 text-neutral-800">CONTACTAME</h2>
-    <div class="bg-redd-500 flex justify-center items-center">
-        <p class="w-1/2 text-sm text-start text-neutral-800">Si estás en la búsqueda de un colaborador motivado y comprometido para futuros proyectos, estoy disponible para ser parte de tu equipo. Estoy abierto a explorar oportunidades de colaboración. Si consideras que puedo aportar valor a tu equipo, no dudes en ponerte en contacto. Hasta pronto.</p>
+    <div class="bg-redd-500 flex justify-between items-center">
+        <p class="w-2/5 text-sm text-start text-neutral-800">Si estás en la búsqueda de un colaborador motivado y comprometido para futuros proyectos, estoy disponible para ser parte de tu equipo. Estoy abierto a explorar oportunidades de colaboración. Si consideras que puedo aportar valor a tu equipo, no dudes en ponerte en contacto. Hasta pronto.</p>
         <section class="w-1/2 flex flex-col justify-center items-center gap-y-3 bg-greend-500 ">
-            <div class="w-[425px] cursor-pointer relative flex justify-center items-center border border-neutral-400 bg-[#0D1117]">
-                <div class="w-full h-full text-2xl font-semibold text-neutral-800 tracking-[15px] hover:opacity-0 absolute top-0 left-0 bg-neutral-100 opacity-50 flex justify-center items-center transition-opacity duration-500">GITHUB</div>
+            <div class="w-[425px] cursor-pointer relative flex justify-center items-center border border-neutral-300 rounded-md bg-[#0D1117]">
+                <div class="w-full h-full text-2xl font-semibold text-neutral-800 tracking-[15px] hover:opacity-0 absolute top-0 left-0 bg-[#e7e1e1] opacity-100 flex justify-start gap-5 items-center transition-opacity duration-500"><i class="bx bxl-github bx-md ml-3"/> GITHUB</div>
                 <picture class="w-[70px] h-[85px] flex justify-center items-center bg-redd-500">
                     <img src={github.src} alt="" class="w-[35px] h-[35px] rounded-full mb-5">
                 </picture>
@@ -21,8 +21,8 @@ import linkedin from "../../../public/ImageContact/Linkedin.jpg"
                     <li class="text-[8px] text-neutral-400"><i class="bx bx-map mr-1 text-[12px]"/>Buenos Aires, Argentina</li>
                 </ul>
             </div>
-            <div class="w-[425px] cursor-pointer relative flex justify-center items-center border border-neutral-400 bg-[#1B1F23]">
-                <div class="w-full h-full text-2xl z-10 font-semibold text-neutral-800 tracking-[15px] hover:opacity-0 absolute top-0 left-0 bg-neutral-100 opacity-50 flex justify-center items-center transition-opacity duration-500">LINKEDIN</div>
+            <div class="w-[425px] cursor-pointer relative flex justify-center items-center border border-neutral-300 rounded-md bg-[#1B1F23]">
+                <div class="w-full h-full text-2xl z-10 font-semibold text-neutral-800 tracking-[15px] hover:opacity-0 absolute top-0 left-0 bg-[#e7e1e1] opacity-100 flex justify-start gap-5 items-center transition-opacity duration-500"><i class="bx bxl-linkedin bx-md ml-3"/> LINKEDIN</div>
                 <div class="w-[70px] h-[85px] flex justify-center items-center">
                     <picture class="w-[35px] h-[35px] relative flex justify-center items-center bg-redd-500">
                         <img src={linkedin.src} alt="" class="rounded-full">
@@ -38,4 +38,8 @@ import linkedin from "../../../public/ImageContact/Linkedin.jpg"
         </section>
     </div>
 </section> 
-<!-- 2.59.53 -->
+<!-- 
+<picture class="w-1/2 flex justify-center items-center bg-redd-500">
+    <img src={imagotipo.src} alt="" class="w-[300px] drop-shadow-[5px_5px_3px_#737373] bg-neutral-5000">
+</picture> -->
+
