@@ -4,9 +4,28 @@ import imagotipo from "../../../public/Logo/Imagotipo2.png"
 ---
 
 <footer class="w-full bg-neutral-800">
-    <section class="area py-10 flex justify-center items-center bg-redd-500">
-        <picture class="w-1/2 flex justify-center items-center">
-            <img src={imagotipo.src} alt="" class="w-[150px] invert">
+    <section class="area flex flex-col justify-center items-center bg-redd-500">
+        <picture class="w-1/2 py-5 flex justify-center items-center">
+            <img src={imagotipo.src} alt={imagotipo.src} class="w-[150px] invert">
         </picture>
+        <div class="w-2/3 h-[1px] bg-neutral-600"></div>
+        <ul class="w-full py-8 flex justify-evenly items-center text-white">
+            <li class="flex flex-col justify-center items-center">
+                <i class="bx bx-envelope"/>
+                <h3 class="text-sm font-semibold tracking-wider">EMAIL</h3>
+                <p class="text-sm text-neutral-400">chambijuanjose05@gmail.com</p>
+            </li>
+            <li class="flex flex-col justify-center items-center">
+                <i class="bx bx-phone"/>
+                <h3 class="text-sm font-semibold tracking-wider">TELEFONO</h3>
+                <p class="text-sm text-neutral-400">(+54) 1161000622</p>
+            </li>
+            <li class="flex flex-col justify-center items-center">
+                <i class="bx bx-map"/>
+                <h3 class="text-sm font-semibold tracking-wider">UBICACION</h3>
+                <p class="text-sm text-neutral-400">Buenos Aires, Argentina</p>
+            </li>
+        </ul>
+        <p class="text-[10px] pb-2 text-neutral-400">© 2024 JC ㅤ•ㅤPowered by Juan Jose</p>
     </section>
 </footer>
