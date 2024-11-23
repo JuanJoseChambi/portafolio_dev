@@ -1,13 +1,13 @@
 ---
-import CardServices from "../../components/CardServices.astro";
+import CardServices from "../../components/CardServices.tsx";
 
 ---
 
-<section class="max-w-[1150px] w-[90%] py-10 mx-auto flex flex-col justify-center items-center bg-redd-500">
+<section class="max-w-[1150px] w-[90%] pb-10 mx-auto flex flex-col justify-center items-center bg-redd-500">
     <div class="w-full py-5 flex justify-around items-center bg-greend-500">
-        <CardServices title="FRONTEND" icon="bx bx-credit-card-front"/>
-        <CardServices title="BACKEND" icon="bx bx-server"/>
-        <CardServices title="DISEÑO" icon="bx bx-palette"/>
-        <CardServices title="RE-DISEÑO" icon="bx bxs-color"/>
+        <CardServices client:visible title="FRONTEND" icon="bx bx-credit-card-front"/>
+        <CardServices client:visible title="BACKEND" icon="bx bx-server"/>
+        <CardServices client:visible title="DISEÑO" icon="bx bx-palette"/>
+        <CardServices client:visible title="RE-DISEÑO" icon="bx bxs-color"/>
     </div>
 </section>
