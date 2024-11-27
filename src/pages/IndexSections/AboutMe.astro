@@ -6,12 +6,12 @@ import TimeLine from "../../components/TimeLine.astro"
 ---
 
 <section class="max-w-[1150px] mx-auto flex flex-col justify-start items-start gap-3 pb-10 pt-0 bg-redd-500 ">
-    <section  class="w-full py-10 flex justify-center items-start gap-16 bg-redd-500">
-        <picture class="w-[400px] h-[400px] bg-redd-500 rounded-full bg-neutral-300">
+    <section  class="w-full py-10 flex justify-center items-start flex-col md:flex-row gap-5 lg:gap-16 bg-redd-500">
+        <picture class="max-w-[400px] max-h-[400px] max-md:mx-auto bg-redd-500 rounded-full bg-neutral-300">
         <!-- <picture class="w-[400px] h-[400px] bg-redd-500 rounded-full shadow-md shadow-black bg-neutral-300"> -->
             <img src={profile_dev.src} alt={profile_dev.src} class="rounded-full drop-shadow-[10px_10px_7px_#5d5d5d]">
         </picture>
-        <section class="w-[550px] py-5 flex flex-col justify-start items-start gap-3 bg-blued-500">
+        <section class="w-[90%] mx-auto md:mx-0  md:w-[550px] py-5 pr-2 flex flex-col justify-start items-start gap-3 bg-blued-500">
             <h2 class="font-semibold text-neutral-700 text-4xl">SOBRE MI</h2>
             <p class="font-medium text-neutral-600">Soy Juan José, desarrollador Fullstack Jr. Inicialmente interesado en ciberseguridad y videojuegos en 2022, me adentré en el desarrollo web. Comenzando de una manera Autodidacta y graduado de bootcamps como SoyHenry, donde he fortalecido habilidades tecnicas como blandas.</p>
             <p class="font-medium text-neutral-600">Mi enfoque se basa en la práctica constante y la adquisición continua de habilidades para ofrecer soluciones innovadoras. Con experiencia en frontend, backend y bases de datos, domino del stack PERN/MERN con tecnologías clave como React, Express y PostgreSQL/MongoDB.</p>
