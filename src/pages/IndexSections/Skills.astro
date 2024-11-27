@@ -10,9 +10,9 @@ const habilities = ["Autodidacta", "Curiosidad", "Adaptabilidad", "Aprendizaje A
 
 <section class="area">
     <TitleSection title="HABILIDADES" />
-    <section class="my-10 flex justify-center items-start bg-redd-500">
+    <section class="my-3 sm:my-10 flex justify-center items-start flex-col sm:flex-row bg-redd-500">
 
-        <div class="w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
+        <div class="w-full sm:w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
             <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">TECNICAS</h3>
             {svgs.map((svg) => (
                 <picture class="relative flex flex-col justify-center items-center cursor-pointer p-3 rounded-full hover:-translate-y-5 transition-transform duration-500">
@@ -21,8 +21,8 @@ const habilities = ["Autodidacta", "Curiosidad", "Adaptabilidad", "Aprendizaje A
                 </picture>
             ))}
         </div>
-        <div class="w-[1px] h-[200px] my-12 bg-neutral-500">ㅤ</div>
-        <div class="w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
+        <div class="w-[1px] h-[200px] hidden sm:block my-12 bg-neutral-500">ㅤ</div>
+        <div class="w-full sm:w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
             <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">BLANDAS</h3>
             <div class="flex flex-wrap justify-center items-center">
                 {habilities.map(text => (
