@@ -6,11 +6,11 @@ interface Props {
 const { image } = Astro.props;
 ---
 
-<div class="max-w-[1100px] mx-auto flex justify-center items-start bg-greend-500">
-	<picture class="w-[430px] h-[250px] flex justify-start items-start overflow-hidden rounded-md">
+<div class="max-w-[1100px] w-[95%] mx-auto flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-center items-center md:items-start bg-greend-500">
+	<picture class="max-w-[430px] h-[250px] flex justify-start items-start overflow-hidden rounded-md bg-redd-500">
 		<img src={image as string} alt="">
 	</picture>
-	<section class="max-w-[450px] pl-4 flex flex-col justify-start gap-y-5 items-start bg-blued-500">
+	<section class="w-full md:max-w-[450px] pl-4 flex flex-col justify-start gap-y-3 md:gap-y-5 items-start bg-blued-500">
 		<h2 class=" font-semibold text-3xl text-neutral-800">VERSA - Tienda de ropa Vintage </h2>
 		<p class="text-sm font-medium text-neutral-700">Versa es un sitio web e-commerce especializada en moda, diseñada para  ofrecer una experiencia de compra en línea intuitiva y atractiva. Este proyecto combina diseño moderno, funcionalidad robusta y una experiencia</p>
 		<div class="flex justify-start items-center gap-5">
