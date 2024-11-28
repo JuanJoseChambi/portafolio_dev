@@ -3,14 +3,26 @@ const {title, year, text, textSize} = Astro.props
 ---
 
 <section class="w-full flex flex-col justify-start items-start">
-    <ul class="relative w-full flex justify-start items-center h-[1px] bg-neutral-800">
+    <ul class="relative w-full hidden md:flex justify-start items-center h-[0px] md:h-[1px]   bg-neutral-800">
         <li class="w-[40px] h-[40px] absolute bg-primary rounded-full flex justify-center items-center">
             <i class="bx bxs-calendar text-2xl text-white"/>
         </li>
     </ul>
-    <ul class="pt-5">
+    <ul class="pt-5 hidden md:block">
         <li class="text-lg font-semibold text-neutral-800">{title}</li>
         <li class="text-xs font-medium text-neutral-700">{year}</li>
-        <li class={`max-w-[95%] py-2 ${textSize} text-neutral-600`}>{text}</li>
+        <li class={`max-w-[95%] md:py-2 ${textSize} text-neutral-600`}>{text}</li>
+    </ul>
+    <ul class="pt-5 block md:hidden">
+        <li class="flex justify-start items-center gap-x-2 flex-row">
+            <div class="w-[40px] h-[40px] bg-primary rounded-full flex justify-center items-center">
+                <i class="bx bxs-calendar text-2xl text-white"/>
+            </div>
+            <ul>
+                <li class="text-lg font-semibold text-neutral-800">{title}</li>
+                <li class="text-xs font-medium text-neutral-700">{year}</li>
+            </ul>
+        </li>
+        <li class={`max-w-[95%] md:py-2 ${textSize} text-neutral-600`}>{text}</li>
     </ul>
 </section>
