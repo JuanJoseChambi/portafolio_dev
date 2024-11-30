@@ -1,14 +1,12 @@
 ---
-import { svgs } from "../../public/Skills/Skills.ts";
+import svgs from "../../public/Skills/Skills.ts";
+
 interface Props {
 	image: string;
 }
 
-const technologies = svgs.forEach((svg) => {svg.path; svg.name.slice(2); svg.content});
-console.log(technologies);
-
 const skills = ["html", "css", "react", "tailwind", "redux", "typescript", "expressjs", "nodejs", "postgresql", "git", "github"]
-// const skilsForProjets = skills.filter((skill) => technologies.includes(skill))
+const skilsForProjets = svgs.filter((tech) => skills.includes(tech.name));
 
 const { image } = Astro.props;
 ---
@@ -23,11 +21,13 @@ const { image } = Astro.props;
 			<p class="text-xs font-medium text-neutral-600">28 Feb - 1 Ago - 2024</p>
 		</div>
 		<p class="text-sm font-medium text-neutral-700">E-commerce de moda con diseño moderno e intuitivo</p>
-		<!-- {skilsForProjets.map((tech) => (
-			<div class="w-[15px] h-[15px]">
-				<img src={tech.src} alt={tech.name} class="w-full h-full">
-			</div>
-		))} -->
+		<div class="flex justify-center items-center gap-4">
+			{skilsForProjets.map((skill) => (
+				<picture class="w-[18px] h-[18px] flex flex-row justify-center items-center">
+					<img src={skill.path} alt={skill.name}>
+				</picture>
+			))}
+		</div>
 		<div class="flex justify-start items-center gap-5">
 			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Frontend</button>
 			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Backend</button>
