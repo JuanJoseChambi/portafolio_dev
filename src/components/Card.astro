@@ -1,7 +1,14 @@
 ---
+import { svgs } from "../../public/Skills/Skills.ts";
 interface Props {
 	image: string;
 }
+
+const technologies = svgs.forEach((svg) => {svg.path; svg.name.slice(2); svg.content});
+console.log(technologies);
+
+const skills = ["html", "css", "react", "tailwind", "redux", "typescript", "expressjs", "nodejs", "postgresql", "git", "github"]
+// const skilsForProjets = skills.filter((skill) => technologies.includes(skill))
 
 const { image } = Astro.props;
 ---
@@ -11,12 +18,20 @@ const { image } = Astro.props;
 		<img src={image as string} alt="">
 	</picture>
 	<section class="w-full md:max-w-[450px] pl-4 flex flex-col justify-start gap-y-3 md:gap-y-5 items-start bg-blued-500">
-		<h2 class=" font-semibold text-3xl text-neutral-800">VERSA - Tienda de ropa Vintage </h2>
-		<p class="text-sm font-medium text-neutral-700">Versa es un sitio web e-commerce especializada en moda, diseñada para  ofrecer una experiencia de compra en línea intuitiva y atractiva. Este proyecto combina diseño moderno, funcionalidad robusta y una experiencia</p>
+		<div class="flex flex-col justify-start items-start gap-1">
+			<h2 class="w-2/3 font-semibold text-3xl text-neutral-800">VERSA - Tienda de ropa Vintage </h2>
+			<p class="text-xs font-medium text-neutral-600">28 Feb - 1 Ago - 2024</p>
+		</div>
+		<p class="text-sm font-medium text-neutral-700">E-commerce de moda con diseño moderno e intuitivo</p>
+		<!-- {skilsForProjets.map((tech) => (
+			<div class="w-[15px] h-[15px]">
+				<img src={tech.src} alt={tech.name} class="w-full h-full">
+			</div>
+		))} -->
 		<div class="flex justify-start items-center gap-5">
-			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 px-3 py-1 rounded-md shadow-md shadow-neutral-400">Frontend</button>
-			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 px-3 py-1 rounded-md shadow-md shadow-neutral-400">Backend</button>
-			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 px-3 py-1 rounded-md shadow-md shadow-neutral-400">Sito Web</button>
+			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Frontend</button>
+			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Backend</button>
+			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bx-world"/> Sito Web</button>
 		</div>
 	</section>
 </div>
