@@ -39,7 +39,7 @@ export const projectsData : Proyects[] = [
             "git"
         ],
         status:"Activo",
-        titulo: "Versa",
+        titulo: "VERSA - Tienda de ropa Vintage",
         fecha: "28 Feb - 1 Ago - 2024",
         githubFront: "https://github.com/JuanJoseChambi/versa-shop",
         githubBack: "https://github.com/JuanJoseChambi/e-commerce-backend",
@@ -62,7 +62,7 @@ export const projectsData : Proyects[] = [
             "github",
         ],
         status:"Activo",
-        titulo: "Products ApI",
+        titulo: "PA - API de productos",
         fecha: "1 Nov - 14 Feb 2023/2024",
         githubFront: "https://github.com/JuanJoseChambi/product-api",
         web: "https://product-api-mu-seven.vercel.app/",
@@ -92,7 +92,7 @@ export const projectsData : Proyects[] = [
     // {
     //     tecnologias: [
     //         "html",
-    //         "CSS",
+    //         "css",
     //         "react",
     //         "javascript",
     //         "typescript",
@@ -113,7 +113,7 @@ export const projectsData : Proyects[] = [
     // {
     //   tecnologias: [
     //     "html",
-    //     "CSS",
+    //     "css",
     //     "react",
     //     "javascript",
     //     "redux",
@@ -135,7 +135,7 @@ export const projectsData : Proyects[] = [
     {
         tecnologias: [
             "html",
-            "CSS",
+            "css",
             "react",
             "javascript",
             "redux",
@@ -146,7 +146,7 @@ export const projectsData : Proyects[] = [
             "github",
         ],
         status:"Desactivo",
-        titulo: "MMarket",
+        titulo: "MMarket - Tienda online",
         fecha: "20 Jul - 30 Ago - 2023",
         githubFront: "https://github.com/JuanJoseChambi/M-Market",
         web: "https://m-market-iota.vercel.app/home",

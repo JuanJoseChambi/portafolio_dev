@@ -11,11 +11,10 @@ interface Props {
 	githubBack:string;
 	siteWeb:string
 }
-
-const skills = ["html", "css", "react", "tailwind", "redux", "typescript", "expressjs", "nodejs", "postgresql", "git", "github"]
-const skilsForProjets = svgs.filter((tech) => skills.includes(tech.name));
-
 const { image, name, date, description, technologies, githubFront, githubBack, siteWeb } = Astro.props;
+
+const skilsForProjets = svgs.filter((tech) => technologies.includes(tech.name));
+
 ---
 
 <div class="max-w-[1100px] w-[95%] mx-auto flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-center items-center md:items-start bg-greend-500">
@@ -30,15 +29,15 @@ const { image, name, date, description, technologies, githubFront, githubBack, s
 		<p class="text-sm font-medium text-neutral-700">{description}</p>
 		<div class="flex justify-center items-center gap-4">
 			{skilsForProjets.map((skill) => (
-				<picture class="w-[18px] h-[18px] flex flex-row justify-center items-center">
-					<img src={skill.path} alt={skill.name}>
+				<picture class="flex flex-row justify-center items-center">
+					<img src={skill.path} alt={skill.name} class="w-[23px] h-[23px]">
 				</picture>
 			))}
 		</div>
 		<div class="flex justify-start items-center gap-5">
-			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Frontend</button>
-			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Backend</button>
-			<button class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bx-world"/> Sito Web</button>
+			<a target="_blank" href={githubFront} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Frontend</a>
+			<a target="_blank" href={githubBack} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Backend</a>
+			<a target="_blank" href={siteWeb} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bx-world"/> Sito Web</a>
 		</div>
 	</section>
 </div>
