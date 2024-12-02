@@ -1,7 +1,6 @@
 ---
-import versa from "../../../public/Projects/VersaShop.png"
-import pa from "../../../public/Projects/ProductApi.png"
 import Card from "../../components/Card.astro"
+import { projectsData } from "../../utilities/projectsData/proyectsData"
 // import TitleSection from "../../components/TitleSection.astro"
 
 ---
@@ -9,8 +8,37 @@ import Card from "../../components/Card.astro"
     <!-- <TitleSection title="PROYECTOS"/> -->
     <h2 class="w-full mx-auto text-center text-4xl mt-10 px-16 font-semibold tracking-widest bg-redd-500 text-neutral-800">PROYECTOS</h2>
     <section class="py-10 flex justify-start items-start flex-col gap-y-10 bg-blued-500">
-        <Card image={versa.src}/>
-        <Card image={pa.src}/>
+        {projectsData.map((project) => (
+            <Card 
+            image={project.image} 
+            name={project.titulo}
+            date={project.fecha}
+            description={project.shortDescription}
+            technologies={project.tecnologias}
+            // githubFront={project.githubFront}
+            // githubBack={project.githubBack}
+            // siteWeb={project.web}
+            
+            />
+        ))}
     </section>
 
 </main>
+
+
+<!-- 
+<Card 
+image={versa.src} 
+name="VERSA - Tienda de ropa Vintage"
+description="E-commerce de moda con diseño moderno e intuitivo"
+/>
+<Card 
+image={pa.src} 
+name="PA - API de productos"
+description="API gratuita para E-commerce y práctica desarrolladores."
+/>
+<Card 
+image={MMarket.src} 
+name="MMarket - Tienda online"
+description="API gratuita para E-commerce y práctica desarrolladores."
+/> -->
