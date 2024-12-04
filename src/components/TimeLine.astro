@@ -13,8 +13,8 @@ const {title, year, text, textSize} = Astro.props
         <li class="text-xs font-medium text-neutral-700">{year}</li>
         <li class={`max-w-[95%] md:py-2 ${textSize} text-neutral-600`}>{text}</li>
     </ul>
-    <ul class="pt-5 block md:hidden">
-        <li class="flex justify-start items-center gap-x-2 flex-row">
+    <ul class="md:hidden flex flex-col justify-start items-start gap-y-2">
+        <li class="w-full flex justify-start items-center gap-x-2 flex-row">
             <div class="w-[40px] h-[40px] bg-primary rounded-full flex justify-center items-center">
                 <i class="bx bxs-calendar text-2xl text-white"/>
             </div>
