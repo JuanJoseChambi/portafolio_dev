@@ -8,14 +8,17 @@ import ButtonAnchor from "../../components/ButtonAnchor.astro"
 <header class="w-full h-screen flex justify-center items-center">
     <section class="area py-2 px-10 bg-redd-500 flex flex-col justify-between items-center bg-greend-500">
         <div class="w-1/2 bg-redd-500 flex justify-center items-center bg-redd-500">
-            <picture class="w-[55%]">
-                <img src={Isotipo.src} alt="" class="drop-shadow-[10px_10px_5px_#737373]">
+            <picture class="min-w-[200px] w-[55%]">
+                <img src={Isotipo.src} alt="Juan Jose" class="drop-shadow-[10px_10px_5px_#737373]">
             </picture>
         </div>
         <div class="w-full lg:w-1/2 bg-redd-500">
-            <h3 class="w-full text-8xl text-center font-bold">Juan Jose</h3>
-            <h1 class="text-[20px] text-center text-gray_light font-medium">Desarrollador <b class="text-primary">Frontend / Backend</b></h1> 
-            <h2 class="text-[20px] text-center text-gray_light font-medium">Estudiante en <b class="text-primary">Ingenieria Informatica</b></h2>
+            <h3 class="w-full text-6xl sm:text-8xl text-center font-bold">Juan Jose</h3>
+            <h1 class="text-sm sm:text-base text-[20px] text-center text-gray_light font-medium">Desarrollador <b class="text-primary">Frontend / Backend</b> 
+                <br/>Estudiante en <b class="text-primary">Ingenieria Informatica
+            </h1> 
+            <h2 class="text-[20px] text-center text-gray_light font-medium"></b></h2>
+            <!-- <h2 class="text-[20px] text-center text-gray_light font-medium">Estudiante en <b class="text-primary">Ingenieria Informatica</b></h2> -->
             <div class="flex justify-center items-center gap-5">
                 <ButtonAnchor title="Gmail" href="https://mail.google.com/mail/u/0/?fs=1&to=chambijuanjose05@gmail.com&tf=cm" icon="bx bxl-gmail"/>
                 <ButtonAnchor title="Linkedin" href="https://www.linkedin.com/in/juanjosechambi/" icon="bx bxl-linkedin-square"/>

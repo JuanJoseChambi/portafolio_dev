@@ -19,11 +19,11 @@ const skilsForProjets = svgs.filter((tech) => technologies.includes(tech.name));
 
 <div class="max-w-[1100px] w-[95%] mx-auto flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-center items-center md:items-start bg-greend-500">
 	<picture class="max-w-[430px] h-[250px] flex justify-start items-start overflow-hidden rounded-md bg-redd-500">
-		<img src={image} alt="">
+		<img src={image} alt="Image Proyect">
 	</picture>
-	<section class="w-full md:max-w-[450px] pl-4 flex flex-col justify-start gap-y-3 md:gap-y-5 items-start bg-blued-500">
+	<section class="w-full md:max-w-[450px] flex flex-col justify-start gap-y-4 md:gap-y-5 items-start bg-blued-500">
 		<div class="flex flex-col justify-start items-start gap-1">
-			<h2 class="w-2/3 font-semibold text-3xl text-neutral-800">{name}</h2>
+			<h2 class="w-full lg:w-2/3 font-semibold text-3xl text-neutral-800">{name}</h2>
 			<p class="text-xs font-medium text-neutral-600">{date}</p>
 		</div>
 		<p class="text-sm font-medium text-neutral-700">{description}</p>
@@ -34,10 +34,10 @@ const skilsForProjets = svgs.filter((tech) => technologies.includes(tech.name));
 				</picture>
 			))}
 		</div>
-		<div class="flex justify-start items-center gap-5">
-			<a target="_blank" href={githubFront} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Frontend</a>
-			<a target="_blank" href={githubBack} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Backend</a>
-			<a target="_blank" href={siteWeb} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-3 py-1.5 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bx-world"/> Sito Web</a>
+		<div class="flex flex-wrap justify-center sm:justify-start items-center mx-auto sm:mx-0 gap-3 sm:gap-5">
+			<a target="_blank" href={githubFront} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-1.5 py-1 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Frontend</a>
+			<a target="_blank" href={githubBack} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-1.5 py-1 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bxl-github"/> Backend</a>
+			<a target="_blank" href={siteWeb} class="bg-neutral-100 text-sm font-medium text-neutral-800 flex justify-center items-center gap-2 px-1.5 py-1 rounded-md shadow-md shadow-neutral-400"><i class="text-lg bx bx-world"/> Sito Web</a>
 		</div>
 	</section>
 </div>
