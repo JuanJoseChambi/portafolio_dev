@@ -11,14 +11,14 @@ import ContactMe from './IndexSections/ContactMe.astro';
 import Footer from './IndexSections/Footer.astro';
 // import Card from '../components/Card.astro';
 
-const persoal_info = await getCollection("personal_info");
+// const persoal_info = await getCollection("personal_info");
 // console.log(persoal_info);
 
 ---
 
 <Layout title="Juan Jose">
 	
-	<Nav/>
+	<Nav client:visible/>
 	<Header/>
 	<Projects/>
 	<Skills/>

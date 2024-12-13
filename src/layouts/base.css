@@ -9,14 +9,18 @@
         @apply max-w-screen-xl w-[95%] mx-auto overflow-hidden
     }
     .area {
-        max-width: 1600px;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+        @apply md:max-w-[1600px] md:w-[95%] mx-auto
+        /* max-width: 1600px; */
+        /* width: 95%; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         /* overflow: hidden; */
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Poppins", sans-serif;
