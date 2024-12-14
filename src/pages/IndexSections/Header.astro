@@ -2,34 +2,50 @@
 
 import Isotipo from "../../../public/Logo/Isotipo.png"
 // import jose from "../../../public/Header/Jose.png"
-import ButtonAnchor from "../../components/ButtonAnchor.astro"
+// import ButtonAnchor from "../../components/ButtonAnchor.astro"
 
 ---
 
-<header class="w-full h-screen relative flex justify-center items-center flex-col" id="INICIO">
-    <div class="w-full flex flex-col justify-center items-center">
-        <div class="min-w-[90%] sm:min-w-[50%] flex justify-between items-center  gap-x-10 bg-redd-500">
-            <h2 class="text-4xl md:text-6xl font-black -tracking-widest">DESARROLLADOR</h2>
-            <div class="w-[30%] text-xs font-light">
-                <p>Desarrollador</p>
-                <p>Frontend</p>
-                <p>Backend</p>
-                <p>UX</p>
-                <p>UI</p>
-            </div>
-        </div>
-        <div class="min-w-[90%] sm:min-w-[50%] flex justify-end items-end bg-redd-500">
-            <h2 class="text-4xl md:text-6xl font-black -tracking-widest">FULLSTACK</h2>
+<header class="area h-screen relative flex justify-center items-center flex-col" id="INICIO">
+    <div class="flex justify-center items-center bg-redd-500">
+        <h2 class="w-[200px] h-[200px] text-9xl text-[#b1b1b157] flex justify-start items-center -tracking-wide font-black absolute left-0 top-5 bottom-0 rotate-90  bg-blued-500">FRONTEND</h2>
+        <!-- <h2 class="w-[200px] h-[200px] text-9xl text-[#b1b1b157] flex justify-start items-center -tracking-wide font-black absolute left-0 top-5 bottom-0 rotate-90  bg-blued-500">DESARROLLADOR</h2> -->
+        <h2 class="w-[200px] h-[200px] text-9xl text-[#b1b1b157] flex justify-start items-center -tracking-wide font-black absolute right-0 top-[450px] bottom-0 -rotate-90  bg-blued-500">BACKEND</h2>
+        <!-- <h2 class="text-center text-8xl text-[#b1b1b157] hidden sm:flex justify-center items-center -tracking-wide font-black absolute right-0 left-0 top-0 bg-blued-500">DESARROLLADOR</h2> -->
+        
+        <div class="flex justify-center items-center flex-col gap-y-5">
+            <h1 class="text-4xl sm:text-7xl text-center font-black -tracking-wider">DESARROLLADOR <br/>FULLSTACK</h2>
+            <p class="sm:text-lg font-light tracking-[10px]">JUAN JOSE CHAMBI</p>
+            <picture class="w-[60px] h-[60px] absolute bottom-2 flex justify-center items-center">
+                <img src={Isotipo.src} alt="">
+            </picture>
         </div>
     </div>
-    <h2 class="text-sm text-center absolute bottom-[100px] tracking-[20px]">JUAN JOSE <br/> CHAMBI</h2>
-    <!-- <h2 class="text-3xl tracking-widest font-semibold">JUAN JOSE</h2> -->
-    <picture class="w-[60px] h-[60px] absolute bottom-2 flex justify-center items-center">
-        <img src={Isotipo.src} alt="">
-    </picture>
 </header>
 
-<!-- <picture class="w-[80px] h-[80px] absolute bottom-2 flex justify-center items-center">
+
+
+
+
+
+<!-- <div class="w-full flex flex-col justify-center items-center">
+    <div class="min-w-[90%] sm:min-w-[50%] flex justify-between items-center  gap-x-10 bg-redd-500">
+        <h2 class="text-4xl md:text-6xl font-black -tracking-widest">DESARROLLADOR</h2>
+        <div class="w-[30%] text-xs font-light">
+            <p>Desarrollador</p>
+            <p>Frontend</p>
+            <p>Backend</p>
+            <p>UX</p>
+            <p>UI</p>
+        </div>
+    </div>
+    <div class="min-w-[90%] sm:min-w-[50%] flex justify-end items-end bg-redd-500">
+        <h2 class="text-4xl md:text-6xl font-black -tracking-widest">FULLSTACK</h2>
+    </div>
+</div>
+<h2 class="text-sm text-center absolute bottom-[80px] tracking-[20px]">JUAN JOSE <br/> CHAMBI</h2>
+<h2 class="text-3xl tracking-widest font-semibold">JUAN JOSE</h2> 
+<picture class="w-[60px] h-[60px] absolute bottom-2 flex justify-center items-center">
     <img src={Isotipo.src} alt="">
 </picture> -->
 
