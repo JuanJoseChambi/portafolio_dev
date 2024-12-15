@@ -2,7 +2,7 @@
 
 import Isotipo from "../../../public/Logo/Isotipo.png"
 // import jose from "../../../public/Header/Jose.png"
-// import ButtonAnchor from "../../components/ButtonAnchor.astro"
+import ButtonAnchor from "../../components/ButtonAnchor.astro"
 
 ---
 
@@ -16,6 +16,11 @@ import Isotipo from "../../../public/Logo/Isotipo.png"
         <div class="flex justify-center items-center flex-col gap-y-5">
             <h1 class="text-4xl sm:text-7xl text-center font-black -tracking-wider">DESARROLLADOR <br/>FULLSTACK</h2>
             <p class="sm:text-lg font-light tracking-[10px]">JUAN JOSE CHAMBI</p>
+            <div class="absolute bottom-[80px] flex justify-center items-center gap-5">
+                <ButtonAnchor title="Gmail" href="https://mail.google.com/mail/u/0/?fs=1&to=chambijuanjose05@gmail.com&tf=cm" icon="bx bxl-gmail text-neutral-700 text-3xl"/>
+                <ButtonAnchor title="Linkedin" href="https://www.linkedin.com/in/juanjosechambi/" icon="bx bxl-linkedin-square text-neutral-700 text-3xl"/>
+                <ButtonAnchor title="Github" href="https://github.com/JuanJoseChambi" icon="bx bxl-github text-neutral-700 text-3xl"/>
+            </div>
             <picture class="w-[60px] h-[60px] absolute bottom-2 flex justify-center items-center">
                 <img src={Isotipo.src} alt="">
             </picture>
