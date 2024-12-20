@@ -149,7 +149,7 @@ export const projectsData : Proyects[] = [
         titulo: "MMarket - Tienda online",
         fecha: "20 Jul - 30 Ago - 2023",
         githubFront: "https://github.com/JuanJoseChambi/M-Market",
-        web: "https://m-market-iota.vercel.app/home",
+        web: null,
         image: MMarket.src,
         gridArea: "minBotRight",
         descripcion:`MMarket fue el resultado final de un proyecto académico grupal, una plataforma web diseñada para tiendas locales de barrios con un enfoque en E-commerce. La metodología SCRUM guió el desarrollo del proyecto, utilizando tecnologías clave como react, node, express y postgresql. <br></br>Entre las características destacadas de MMarket se encuentran servicios integrales como Mercado Pago, nodemailer para el envío de correos electrónicos, autenticación de terceros a través de Firebase y almacenamiento en la nube mediante Cloudinary. La plataforma también incorporó persistencia de usuarios y tablas relacionales entre usuarios, productos, carritos de compra, comentarios, entre otras funcionalidades esenciales. <br></br> Además, el panel de administración del sistema contaba con un dashboard que permitía un control total sobre todos los productos, posibilitando la implementación de un sistema API RESTful.`,
