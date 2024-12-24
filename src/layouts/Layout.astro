@@ -17,8 +17,18 @@ const { title } = Astro.props;
 		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<!-- <meta name="generator" content={Astro.generator} /> -->
 		<title>{title}</title>
+		<script>
+			(function() {
+				const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+				if (theme === 'dark') {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+			})();
+		</script>
 	</head>
-	<body>
+	<body class="bg-[#e7e1e1] dark:bg-[#212121]">
 		<slot />
 	</body>
 </html>

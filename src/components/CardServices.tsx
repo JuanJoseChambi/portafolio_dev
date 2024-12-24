@@ -13,8 +13,8 @@ function CardServices({title, icon}:CardProp) {
         onMouseEnter={() => setHover(title)}
         onMouseLeave={() => setHover("")}
         className="min-w-[250px] cursor-pointer flex flex-col justify-center items-center gap-y-3
-        py-8 font-semibold text-xl text-neutral-500 hover:text-neutral-800 transition-colors duration-700
-        bg-white shadow-md shadow-neutral-400">
+        py-8 font-semibold text-xl text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-400 transition-colors duration-700
+        bg-white dark:bg-neutral-800 shadow-md shadow-neutral-400 dark:shadow-neutral-900">
         <div className='flex flex-col justify-center items-center'>
             <i className={`bx-lg ${icon}`}/>
             <div className='flex justify-center items-center'>

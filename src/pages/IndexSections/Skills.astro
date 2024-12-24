@@ -11,20 +11,20 @@ const habilities = ["Autodidacta", "Curiosidad", "Adaptabilidad", "Aprendizaje A
     <section class="my-3 sm:my-10 flex justify-center items-start flex-col sm:flex-row bg-redd-500">
 
         <div class="w-full sm:w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
-            <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">TECNICAS</h3>
+            <h3 class="w-full text-center font-semibold text-neutral-700 dark:text-neutral-300 inline bg-redd-500">TECNICAS</h3>
             {svgs.map((svg) => (
                 <picture class="relative flex flex-col justify-center items-center cursor-pointer p-3 rounded-full hover:-translate-y-5 transition-transform duration-500">
                     {/* <p class="text-xs text-neutral-700 font-semibold absolute top-0 -translate-y-2">{(svg.name).toUpperCase()}</p> */}
-                    <img class="drop-shadow-[5px_5px_3px_#5d5d5d] text-[#5d5d5d] min-w-[27px] max-w-[27px] min-h-[27px] max-h-[27px]" src={svg.path} alt={svg.name} />
+                    <img class="drop-shadow-[5px_5px_3px_#5d5d5d] dark:drop-shadow-[5px_5px_3px_#000] text-[#5d5d5d] min-w-[27px] max-w-[27px] min-h-[27px] max-h-[27px]" src={svg.path} alt={svg.name} />
                 </picture>
             ))}
         </div>
         <div class="w-[1px] h-[200px] hidden sm:block my-12 bg-neutral-500">ㅤ</div>
         <div class="w-full sm:w-[500px] p-5 flex flex-wrap justify-center items-center gap-4 bg-blued-500">
-            <h3 class="w-full text-center font-semibold text-neutral-700 inline bg-redd-500">BLANDAS</h3>
+            <h3 class="w-full text-center font-semibold text-neutral-700 dark:text-neutral-300 inline bg-redd-500">BLANDAS</h3>
             <div class="flex flex-wrap justify-center items-center">
                 {habilities.map(text => (
-                    <p class="w-1/2 font-simibold tracking-wider text-center py-5 bg-blued-500"><b class="text-primary">{text[0]}</b>{text.slice(1)}</p>
+                    <p class="w-1/2 font-simibold tracking-wider text-center py-5 text-neutral-800 dark:text-neutral-300 bg-blued-500"><b class="text-primary">{text[0]}</b>{text.slice(1)}</p>
                 ))}
             </div>
         </div>
