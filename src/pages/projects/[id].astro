@@ -1,0 +1,12 @@
+---
+export function getStaticPaths() {
+  return [
+    {params: {id: 'versa'}},
+    {params: {id: 'pa'}},
+    {params: {id: 'mmarket'}},
+  ];
+}
+
+const { id } = Astro.params;
+---
+<div>¡Buen chico, {id}!</div>
