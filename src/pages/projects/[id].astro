@@ -1,12 +1,39 @@
 ---
-export function getStaticPaths() {
-  return [
-    {params: {id: 'versa'}},
-    {params: {id: 'pa'}},
-    {params: {id: 'mmarket'}},
-  ];
+import Layout from '../../layouts/Layout.astro';
+import { projectsData } from '../../utilities/projectsData/proyectsData';
+
+export async function getStaticPaths() {
+  
+  const paths = projectsData.map((project) => ({
+    params: { id: project.tituloPath },
+  }));
+  
+  return paths
+  
 }
 
 const { id } = Astro.params;
+
+const project = projectsData.find((project) => project.tituloPath === id);
+// console.log(`img id - ${id}`);
+
 ---
-<div>¡Buen chico, {id}!</div>
+<Layout title="Projects">
+  <header class="area h-screen flex flex-col justify-center items-center bg-redd-500">
+    <ul class="w-full h-[20px] bg-purple-500">
+      <li><a href="/"><i class="bx bx-left-arrow-alt"/></a></li>
+      <li></li>
+    </ul>
+    <section class="flex justify-center items-center">
+      <picture class="w-[25%] flex justify-center items-center overflow-hidden bg-red-500">
+        <img src={project?.image} alt={id} transition:name={`ìmg-${id}`}/>
+      </picture>
+  
+      <section class="w-[70%] bg-green-500">
+        <h2>{project?.titulo}</h2>
+      </section>  
+    </section>
+
+  </header>
+  
+</Layout>

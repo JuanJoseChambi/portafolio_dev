@@ -5,6 +5,7 @@ export interface Proyects {
     tecnologias: string[];
     status:string;
     titulo: string;
+    tituloPath:string;
     fecha: string;
     githubFront?: null | string;
     githubBack?: null | string;
@@ -40,6 +41,7 @@ export const projectsData : Proyects[] = [
         ],
         status:"Activo",
         titulo: "VERSA - Tienda de ropa Vintage",
+        tituloPath: "versa-shop",
         fecha: "28 Feb - 1 Ago - 2024",
         githubFront: "https://github.com/JuanJoseChambi/versa-shop",
         githubBack: "https://github.com/JuanJoseChambi/e-commerce-backend",
@@ -63,6 +65,7 @@ export const projectsData : Proyects[] = [
         ],
         status:"Activo",
         titulo: "PA - API de productos",
+        tituloPath:"pa",
         fecha: "1 Nov - 14 Feb 2023/2024",
         githubFront: "https://github.com/JuanJoseChambi/product-api",
         githubBack:"https://github.com/JuanJoseChambi/product-api-backend",
@@ -148,6 +151,7 @@ export const projectsData : Proyects[] = [
         ],
         status:"Desactivo",
         titulo: "MMarket - Tienda online",
+        tituloPath:"mmarket",
         fecha: "20 Jul - 30 Ago - 2023",
         githubFront: "https://github.com/JuanJoseChambi/M-Market/tree/developer/client",
         githubBack:"https://github.com/JuanJoseChambi/M-Market/tree/developer/api",
