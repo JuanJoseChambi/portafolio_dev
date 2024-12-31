@@ -1,6 +1,16 @@
 import MMarket from "../../../public/Projects/MMarket.svg"
 import Versa from "../../../public/Projects/VersaShop.png"
 import ProductsAPI from "../../../public/Projects/ProductApi.png"
+const imagesVersa = import.meta.glob('/public/Projects/Versa*.{jpg,jpeg,png,svg,webp}', { eager: true });
+const imagesPa = import.meta.glob('/public/Projects/Pa*.{jpg,jpeg,png,svg,webp}', { eager: true });
+
+// Extrae las rutas de los archivos
+const imageArrayVersa = Object.keys(imagesVersa);
+const imageArrayPa = Object.keys(imagesPa);
+
+console.log(imageArrayVersa);
+
+
 export interface Proyects {
     tecnologias: string[];
     status:string;
@@ -73,7 +83,7 @@ export const projectsData : Proyects[] = [
         image: ProductsAPI.src,
         gridArea: "bigTopRight",
         short: true,
-        descripcion: "Products API es una plataforma de desarrollo web que ofrece una API gratuita especialmente diseñada para proyectos E-commerce. Además de proporcionar datos esenciales para tu proyecto, se destaca como una herramienta de documentación integral para desarrolladores. Este servicio va más allá de simplemente suministrar información; brinda oportunidades valiosas para practicar y perfeccionar habilidades en áreas cruciales como autenticación, billeteras virtuales y seguridad. <br><br> En resumen, Products API se presenta como una solución integral y versátil para aquellos que buscan no solo acceder a una API de productos, sino también potenciar sus habilidades de desarrollo web.",
+        descripcion: "Products API es una plataforma de desarrollo web que ofrece una API gratuita especialmente diseñada para proyectos E-commerce.\nAdemás de proporcionar datos esenciales para tu proyecto, se destaca como una herramienta de documentación integral para desarrolladores. Este servicio va más allá de simplemente suministrar información; brinda oportunidades valiosas para practicar y perfeccionar habilidades en áreas cruciales como autenticación, billeteras virtuales y seguridad. \nEn resumen, Products API se presenta como una solución integral y versátil para aquellos que buscan no solo acceder a una API de productos, sino también potenciar sus habilidades de desarrollo web.",
         shortDescription:"API gratuita para E-commerce y práctica desarrolladores."
     },
     // {
@@ -158,7 +168,7 @@ export const projectsData : Proyects[] = [
         web: null,
         image: MMarket.src,
         gridArea: "minBotRight",
-        descripcion:`MMarket fue el resultado final de un proyecto académico grupal, una plataforma web diseñada para tiendas locales de barrios con un enfoque en E-commerce. La metodología SCRUM guió el desarrollo del proyecto, utilizando tecnologías clave como react, node, express y postgresql. <br></br>Entre las características destacadas de MMarket se encuentran servicios integrales como Mercado Pago, nodemailer para el envío de correos electrónicos, autenticación de terceros a través de Firebase y almacenamiento en la nube mediante Cloudinary. La plataforma también incorporó persistencia de usuarios y tablas relacionales entre usuarios, productos, carritos de compra, comentarios, entre otras funcionalidades esenciales. <br></br> Además, el panel de administración del sistema contaba con un dashboard que permitía un control total sobre todos los productos, posibilitando la implementación de un sistema API RESTful.`,
+        descripcion:`MMarket fue el resultado final de un proyecto académico grupal, una plataforma web diseñada para tiendas locales de barrios con un enfoque en E-commerce. La metodología SCRUM guió el desarrollo del proyecto, utilizando tecnologías clave como react, node, express y postgresql.\nEntre las características destacadas de MMarket se encuentran servicios integrales como Mercado Pago, nodemailer para el envío de correos electrónicos, autenticación de terceros a través de Firebase y almacenamiento en la nube mediante Cloudinary. La plataforma también incorporó persistencia de usuarios y tablas relacionales entre usuarios, productos, carritos de compra, comentarios, entre otras funcionalidades esenciales. \n Además, el panel de administración del sistema contaba con un dashboard que permitía un control total sobre todos los productos, posibilitando la implementación de un sistema API RESTful.`,
         shortDescription:"Plataforma e-commerce local con funcionalidades avanzadas."
     },
 ]
